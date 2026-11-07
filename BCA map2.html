@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>BCA &amp; CS Map: learn, find opportunities, stay focused (mobile)</title>
+<meta name="description" content="A free, structured map for BCA and CS students: semester roadmap, free courses, opportunities, binary and focus games, and step-by-step methods to avoid distraction.">
+<meta name="theme-color" content="#10243e">
+<meta property="og:type" content="website">
+<meta property="og:title" content="BCA &amp; CS Map: learn in order, stay focused">
+<meta property="og:description" content="Roadmap, free resources, opportunities, binary games and focus methods for BCA and CS students.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧭</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f2f5f9;--ink:#10243e;--mute:#4d5f78;--line:#cfd8e4;--card:#fff;--hl:#ffd23f;--hlink:#10243e;--acc:#a14a00;--grid:#dde5ef;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1626;--ink:#e8eef8;--mute:#9fb0c8;--line:#27364d;--card:#14213a;--hl:#ffd23f;--hlink:#10243e;--acc:#ffd23f;--grid:#16233a}}
+:root[data-theme="dark"]{--bg:#0d1626;--ink:#e8eef8;--mute:#9fb0c8;--line:#27364d;--card:#14213a;--hl:#ffd23f;--hlink:#10243e;--acc:#ffd23f;--grid:#16233a}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "IBM Plex Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","IBM Plex Sans",sans-serif;line-height:1.1;margin:0}
+.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+nav .wrap{display:flex;gap:6px;overflow-x:auto;padding:10px 20px}
+nav a{color:var(--ink);text-decoration:none;padding:6px 10px;white-space:nowrap;font-size:15px;font-weight:500;border-bottom:2px solid transparent}
+nav a:hover,nav a:focus-visible,nav a.on{border-bottom-color:var(--acc);outline:none}
+header.hero{padding:56px 0 36px;position:relative;overflow:hidden}.heroGrid{display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center}@media(max-width:800px){.heroGrid{grid-template-columns:1fr}}.term{background:#0b1424;color:#d6e2f5;border-radius:6px 18px 6px 6px;padding:18px 20px;font:500 14.5px/1.7 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;min-height:262px;box-shadow:6px 6px 0 var(--hl);overflow-x:auto}.term .c{color:#8aa0bf}.term .k{color:#ffd23f}.term .ok{color:#7ee0a0}.term i{display:inline-block;width:8px;height:1.1em;background:#ffd23f;vertical-align:-2px;animation:bl 1s steps(1) infinite}@keyframes bl{50%{opacity:0}}h1 span{display:block;color:var(--mute)}.trail{position:relative;padding-left:44px}.rail{position:absolute;left:11px;top:6px;bottom:6px;width:3px;background:var(--line);border-radius:3px}.rail b{display:block;width:100%;height:0;background:var(--acc);border-radius:3px}.stn{position:relative;padding:0 0 44px;opacity:.6;transition:opacity .4s}.stn.on{opacity:1}.dot{position:absolute;left:-41px;top:6px;width:19px;height:19px;border-radius:50%;background:var(--bg);border:3px solid var(--line);transition:background .3s,border-color .3s,transform .3s}.stn.on .dot{background:var(--hl);border-color:var(--acc);transform:scale(1.15)}.stn h3{font-size:28px}.sem{color:var(--mute);margin-bottom:6px}.goal{font-weight:600;margin:14px 0 0}#resources .grid{display:block;border-bottom:1px solid var(--line)}#resources .card{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,2fr) minmax(0,.9fr);gap:8px 24px;align-items:baseline;background:transparent;border:0;border-top:1px solid var(--line);border-radius:0;padding:16px 0}#resources .card p,#resources .card small{margin:0}@media(max-width:700px){#resources .card{grid-template-columns:1fr}}#opps .card{animation:in .28s ease-out}@keyframes in{from{opacity:0;transform:translateY(6px)}}
+h1{font-size:clamp(36px,6vw,64px);font-weight:800;letter-spacing:-.03em}
+
+.heroGrid p{max-width:58ch;color:var(--mute);font-size:19px;margin:18px 0 0}
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.facts span{background:var(--card);border:1px solid var(--line);padding:6px 12px;border-radius:8px;font-size:15px}
+section{padding:40px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(28px,5vw,42px);font-weight:800;margin-bottom:8px;letter-spacing:-.02em}
+.lead{color:var(--mute);max-width:62ch;margin:0 0 22px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+button.tab,button.chip{font:500 15px "IBM Plex Sans",sans-serif;padding:8px 14px;border-radius:99px;border:1.5px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer}
+button.tab[aria-selected=true],button.chip[aria-pressed=true]{background:var(--ink);color:var(--bg)}
+button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+.panel{background:var(--card);border:1.5px solid var(--ink);border-radius:14px 14px 14px 2px;padding:22px}
+.panel h3{font-size:24px;margin-bottom:4px}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:14px}
+.cols h4{margin:0 0 6px;font-size:16px;color:var(--acc)}
+ul{margin:0;padding-left:18px}li{margin:4px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px}
+.card[hidden]{display:none}
+.card b{font-family:"Bricolage Grotesque",sans-serif;font-size:19px;display:block}
+.card small{display:inline-block;margin-top:8px;color:var(--acc);font-weight:600}
+.card p{margin:6px 0 0;font-size:15.5px;color:var(--mute)}
+ol.steps{list-style:none;counter-reset:s;padding:0;margin:0;display:grid;gap:12px}
+ol.steps li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 16px 16px 62px;position:relative;margin:0}
+ol.steps li::before{content:counter(s);position:absolute;left:14px;top:14px;width:34px;height:34px;border-radius:8px;background:var(--ink);color:var(--bg);font:800 18px "Bricolage Grotesque";display:grid;place-items:center;transition:background .3s,color .3s}ol.steps li.done::before{content:"\2713";background:var(--hl);color:var(--hlink)}
+ol.steps li.done{opacity:.6}
+ol.steps label{display:flex;gap:10px;align-items:flex-start;cursor:pointer;font-weight:600}
+ol.steps input{margin-top:6px;width:18px;height:18px;accent-color:var(--acc)}
+ol.steps p{margin:6px 0 0 28px;color:var(--mute);font-size:15.5px}
+ol.steps em{font-style:normal;color:var(--acc);font-weight:600}
+.bar{height:10px;background:var(--line);border-radius:9px;overflow:hidden;margin:0 0 18px}
+.bar i{display:block;height:100%;width:0;background:var(--acc);transition:width .3s}
+.timer{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.timer output{font:800 56px "Bricolage Grotesque";min-width:3.4ch}
+.timer button{font:600 16px "IBM Plex Sans";padding:10px 18px;border-radius:10px;border:1.5px solid var(--ink);background:var(--hl);color:var(--hlink);cursor:pointer}
+table{width:100%;border-collapse:collapse;background:var(--card);border-radius:10px;overflow:hidden;font-size:15.5px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--ink);color:var(--bg)}
+.scroll{overflow-x:auto}
+.game{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}@media(max-width:760px){.game{grid-template-columns:1fr}}.tgt{font:800 clamp(64px,14vw,110px)/1 "Bricolage Grotesque",sans-serif;letter-spacing:-.03em}.sum{margin:10px 0;font-weight:600;min-height:1.6em}.stat{display:flex;gap:18px;color:var(--mute);margin:0 0 14px}.bits{display:grid;grid-template-columns:repeat(8,1fr);gap:6px}.bit{border:1.5px solid var(--ink);background:var(--card);color:var(--ink);border-radius:8px;padding:10px 0 6px;cursor:pointer;font:600 12.5px "IBM Plex Sans",sans-serif;transition:transform .18s,background .18s;display:flex;flex-direction:column;align-items:center;gap:4px}.bit b{font:800 28px "Bricolage Grotesque",sans-serif}.bit[aria-pressed=true]{background:var(--ink);color:var(--bg);transform:translateY(-4px)}.bits.ok .bit{background:var(--hl);color:var(--hlink);border-color:var(--hlink);animation:wave .5s both}@keyframes wave{40%{transform:translateY(-12px)}}@keyframes pop{30%{transform:scale(1.25)}}@keyframes pulse{0%{box-shadow:0 0 0 0 var(--acc)}100%{box-shadow:0 0 0 12px transparent}}ol.steps li.done::before{animation:pop .4s}.stn.on .dot{animation:pulse 1s ease-out}.rv{opacity:0;transform:translateY(10px);transition:opacity .5s,transform .5s}.rv.in{opacity:1;transform:none}
+[hidden]{display:none!important}.qb{margin-bottom:14px}.qb.code{font:500 19px/1.6 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:#0b1424;color:#d6e2f5;border-radius:6px 14px 6px 6px;padding:14px 16px;white-space:pre-wrap;overflow-x:auto}.qb.rb{display:grid;grid-template-columns:repeat(8,1fr);gap:6px}.qb.rb span{display:grid;place-items:center;height:52px;border-radius:8px;border:1.5px solid var(--line);font:800 26px "Bricolage Grotesque",sans-serif}.qb.rb span.one{background:var(--ink);color:var(--bg);border-color:var(--ink)}.qopts{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:10px}.qopts button{font:700 20px "Bricolage Grotesque",sans-serif;padding:12px;border:1.5px solid var(--ink);background:var(--card);color:var(--ink);border-radius:10px;cursor:pointer;transition:background .2s}.qopts button:hover{background:var(--line)}.qopts button.good{background:var(--hl);color:var(--hlink);animation:pop .4s}.qopts button.bad{opacity:.55;text-decoration:line-through;animation:shake .35s}@keyframes shake{25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+nav a{display:inline-flex;align-items:center;gap:6px}nav svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:transform .25s}nav a:hover svg,nav a.on svg{transform:translateY(-2px) rotate(-8deg)}
+.hero>.wrap,.hero>section{position:relative;z-index:1}.fb{position:absolute;bottom:-5%;font:700 20px ui-monospace,Menlo,Consolas,monospace;color:var(--acc);opacity:0;pointer-events:none;animation:fl linear infinite}@keyframes fl{from{bottom:-5%;opacity:0}10%{opacity:.18}90%{opacity:.18}to{bottom:105%;opacity:0}}.facts span{animation:in .5s both}.facts span:nth-child(2){animation-delay:.15s}.facts span:nth-child(3){animation-delay:.3s}h2::after{content:"";display:block;height:4px;width:0;background:var(--acc);border-radius:2px;margin-top:8px;transition:width .6s ease-out}h2.in::after{width:56px}
+.mlist{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:10px;align-items:start}.mth{background:var(--card);border:1px solid var(--line);border-radius:10px}.mth summary{list-style:none;cursor:pointer;padding:14px 16px;display:flex;gap:10px;align-items:center;font:800 18px "Bricolage Grotesque",sans-serif}.mth summary::-webkit-details-marker{display:none}.mth summary::after{content:"+";font:600 22px "IBM Plex Sans",sans-serif;transition:transform .25s}.mth[open] summary::after{transform:rotate(45deg)}.mth summary small{margin-left:auto;font:600 13px "IBM Plex Sans",sans-serif;color:var(--acc)}.mth .mb{padding:0 16px 14px;animation:in .3s ease-out}.mth .mb p{margin:0 0 8px;font-size:15.5px}.mth .ev{color:var(--mute)}
+.ladder{display:flex;gap:14px;align-items:flex-end;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 18px 12px}.lad{flex:1;text-align:center;font-size:14.5px}.lad i{display:block;width:100%;height:0;background:var(--ink);border-radius:6px 6px 0 0;transition:height .9s cubic-bezier(.2,.8,.2,1)}.ladder.in .lad i{height:calc(var(--m)*3px)}.lad b{display:block;font:800 18px "Bricolage Grotesque",sans-serif;margin-top:6px}
+.fgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.ft{height:84px;border:1.5px dashed var(--line);border-radius:10px;background:transparent;font:800 18px "Bricolage Grotesque",sans-serif;cursor:pointer;color:var(--ink)}.ft.on{border-style:solid;animation:in .15s ease-out}.ft.code{background:var(--ink);color:var(--bg);border-color:var(--ink)}.ft.noise{background:var(--hl);color:var(--hlink);border-color:var(--hlink)}.ft.hit{background:var(--acc);color:var(--bg);border-style:solid;animation:pop .25s}.ft.wrong{background:var(--card);color:var(--ink);border:2px solid #c0392b;animation:shake .3s}
+footer{padding:30px 0 50px;color:var(--mute);font-size:14.5px;border-top:1px solid var(--line)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.bar i{transition:none}.term i{animation:none}.stn,.dot{transition:none}#opps .card{animation:none}.bit{transition:none}.bits.ok .bit,.stn.on .dot,ol.steps li.done::before{animation:none}.rv{opacity:1;transform:none;transition:none}.qopts button,.qopts button.good,.qopts button.bad{transition:none;animation:none}.fb{display:none}.facts span{animation:none}nav svg{transition:none}.lad i{transition:none}.ft.on,.ft.hit,.ft.wrong{animation:none}h2::after{width:56px;transition:none}.mth .mb{animation:none}.mth summary::after{transition:none}}
+
+/* ===== Mobile-first layer ===== */
+html,body{overflow-x:clip}
+body{font-size:16px;padding-bottom:88px;-webkit-text-size-adjust:100%}
+button,a,summary{touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+.wrap{max-width:640px;padding:0 16px}
+header.hero{padding:24px 0 8px}
+h1{font-size:clamp(32px,9.5vw,44px)}
+.heroGrid{grid-template-columns:1fr;gap:18px}
+.heroGrid p{font-size:17px;margin-top:12px}
+.facts{margin-top:16px;gap:8px}.facts span{font-size:14px;padding:5px 10px}
+.term{font-size:12.5px;min-height:0;padding:14px;box-shadow:4px 4px 0 var(--hl)}
+section{padding:30px 0}
+h2{font-size:clamp(26px,7.5vw,34px)}
+nav{position:fixed;top:auto;bottom:0;left:0;right:0;border-bottom:0;border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom,0px);box-shadow:0 -4px 16px rgba(0,0,0,.06)}
+nav .wrap{max-width:none;padding:0;gap:0;overflow-x:auto;scroll-snap-type:x proximity;scrollbar-width:none}
+nav .wrap::-webkit-scrollbar{display:none}
+nav a{flex:0 0 auto;min-width:74px;flex-direction:column;gap:2px;padding:8px 6px 7px;font-size:11.5px;border-bottom:0;border-top:3px solid transparent;scroll-snap-align:start}
+nav a:hover,nav a:focus-visible,nav a.on{border-bottom-color:transparent;border-top-color:var(--acc)}
+nav svg{width:22px;height:22px}
+button.chip,button.tab{min-height:44px;padding:10px 16px;flex:0 0 auto}
+.tabs{flex-wrap:nowrap;overflow-x:auto;margin:0 -16px 16px;padding:0 16px 4px;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.timer button{min-height:48px}.timer output{font-size:52px}
+.panel{padding:18px}
+.game{grid-template-columns:1fr}
+.bits{grid-template-columns:repeat(4,1fr);gap:8px}
+.bit{padding:16px 0 12px;font-size:13px}.bit b{font-size:32px}
+.tgt{font-size:clamp(72px,26vw,110px)}
+.qopts{grid-template-columns:repeat(2,1fr)}
+.qopts button{min-height:56px;font-size:22px}
+.qb.code{font-size:15.5px}.qb.rb span{height:46px;font-size:22px}
+.ft{height:92px;font-size:17px}.fgrid{gap:10px}
+.grid{grid-template-columns:1fr}
+#resources .card{grid-template-columns:1fr;gap:4px}
+.mlist{grid-template-columns:1fr}.mth summary{min-height:52px}
+.ladder{gap:8px;padding:14px 10px 10px}.lad{font-size:12.5px}.lad b{font-size:15px}
+.trail{padding-left:36px}.dot{left:-33px}.cols{grid-template-columns:1fr}.stn h3{font-size:24px}
+ol.steps li{padding:14px 14px 14px 56px}ol.steps input{width:22px;height:22px}
+table{font-size:14.5px}
+.fb:nth-of-type(odd){display:none}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="i-chip" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></symbol><symbol id="i-map" viewBox="0 0 24 24"><path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2z"/><path d="M9 4v14M15 6v14"/></symbol><symbol id="i-book" viewBox="0 0 24 24"><path d="M4 4h12a4 4 0 0 1 4 4v12H8a4 4 0 0 1-4-4z"/><path d="M4 16a4 4 0 0 1 4-4h12"/></symbol><symbol id="i-brief" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></symbol><symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></symbol><symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></symbol><symbol id="i-pad" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="10" rx="5"/><path d="M7 10v4M5 12h4M15 11.5h.01M18 13h.01"/></symbol><symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol></svg>
+<nav><div class="wrap"><a href="#game"><svg viewBox="0 0 24 24"><use href="#i-chip"/></svg>Lab</a><a href="#roadmap"><svg viewBox="0 0 24 24"><use href="#i-map"/></svg>Roadmap</a><a href="#resources"><svg viewBox="0 0 24 24"><use href="#i-book"/></svg>Learn</a><a href="#opportunities"><svg viewBox="0 0 24 24"><use href="#i-brief"/></svg>Apply</a><a href="#focus"><svg viewBox="0 0 24 24"><use href="#i-target"/></svg>Focus</a><a href="#methods"><svg viewBox="0 0 24 24"><use href="#i-layers"/></svg>Methods</a><a href="#fgame"><svg viewBox="0 0 24 24"><use href="#i-pad"/></svg>Tap game</a><a href="#week"><svg viewBox="0 0 24 24"><use href="#i-cal"/></svg>Week</a></div></nav>
+
+<header class="hero"><div class="wrap">
+<div class="heroGrid"><div><h1>Six semesters.<span>In the right order.</span></h1>
+<p>A map for BCA and CS students: what to learn each semester, free world-class courses, real opportunities to find, and a 7-step method to protect your study time from distraction.</p>
+<div class="facts"><span>BCA = 3 years, 6 semesters</span><span>Best courses below are free</span><span>One focus rule per step</span></div></div><div class="term" id="term" aria-label="Animated example of a C program compiling"></div></div>
+</div></header>
+
+<section id="roadmap"><div class="wrap">
+<h2>Roadmap by year</h2>
+<p class="lead">Order matters. Scroll down the trail: the line fills as you pass each stage.</p>
+<div class="trail" id="trail"><i class="rail"><b id="fill"></b></i></div>
+
+</div></section>
+
+<section id="resources"><div class="wrap">
+<h2>Free resources worth your time</h2>
+<p class="lead">Use one main course per subject. Finishing one course beats starting five.</p>
+<div class="grid">
+<div class="card"><b>CS50x and CS50P (Harvard)</b><p>Full intro to computer science (C, Python, SQL, web) and a separate Python course. Free to learn; a verified certificate is optional and paid.</p><small>Start here: Year 1</small></div>
+<div class="card"><b>NPTEL / SWAYAM</b><p>Courses by IITs and IISc in English and some Indian languages. Videos are free; the proctored certificate exam has a fee.</p><small>DSA, DBMS, OS, networks</small></div>
+<div class="card"><b>MIT OpenCourseWare</b><p>Lectures, notes and assignments from MIT courses, free. Good for maths for computing and algorithms.</p><small>Depth: Year 2 and 3</small></div>
+<div class="card"><b>freeCodeCamp and The Odin Project</b><p>Project-based web development paths with no cost. Each path ends in projects you can put on GitHub.</p><small>Web development</small></div>
+<div class="card"><b>Teach Yourself Computer Science</b><p>A curated list of the best books and courses for programming, architecture, OS, networks, databases and algorithms.</p><small>teachyourselfcs.com</small></div>
+<div class="card"><b>roadmap.sh</b><p>Visual checklists for roles such as frontend, backend, DevOps and data. Use it to see what a job actually asks for.</p><small>Choosing a direction</small></div>
+<div class="card"><b>Kaggle Learn</b><p>Short free lessons on Python, pandas, SQL and machine learning with notebooks you run in the browser.</p><small>Data and ML</small></div>
+<div class="card"><b>Nand2Tetris</b><p>Build a computer from logic gates up to a working program. Good if you like electronics as well as software.</p><small>Hardware to software</small></div>
+</div>
+</div></section>
+
+<section id="opportunities"><div class="wrap">
+<h2>Opportunities to find</h2>
+<p class="lead">Filter by what you need now. Dates, eligibility and stipends change every year, so always confirm on the official site before applying.</p>
+<div class="tabs" id="chips"></div>
+<div class="grid" id="opps"></div>
+</div></section>
+
+<section id="game"><div class="wrap">
+<h2>Binary lab: five games</h2>
+<p class="lead">Computers store everything as bits, each 0 or 1. Every cell is worth a power of 2, and one byte (8 bits) holds 0 to 255. Pick a game: start with Build, then Read, Bit operators and C output. Speed round is a 45-second test.</p><div class="tabs" id="gtabs"></div>
+<div class="game" id="pBuild"><div><div class="tgt" id="tgt" aria-live="polite">0</div><div class="sum" id="sum">Sum: 0</div><div class="stat"><span>Solved: <b id="sc">0</b></span><span>Streak: <b id="stk">0</b></span></div><button class="chip" id="skip">Skip to a new number</button> <button class="chip" id="spgo" hidden>Start 45 s round</button> <span id="sptime" style="font-weight:600"></span></div>
+<div><div class="bits" id="bits" role="group" aria-label="8 bits"></div><p class="lead" id="msg" style="margin:14px 0 0">Click the cells to switch them on or off.</p></div></div>
+<div id="pQuiz" hidden><div class="panel"><p class="lead" id="qtitle" style="margin:0 0 10px"></p><div class="qb" id="qb"></div><div class="qopts" id="qopts"></div><p id="qfb" aria-live="polite" style="margin:14px 0 0;font-weight:600;min-height:3.2em"></p><div class="stat" style="margin:12px 0 0;align-items:center"><span>Correct: <b id="qc">0</b> of <b id="qt">0</b></span><button class="chip" id="qnext" hidden>Next question</button></div></div></div>
+</div></section>
+
+<section id="focus"><div class="wrap">
+<h2>Step-by-step: stay away from distraction</h2>
+<p class="lead">Tick each step when you have set it up, not when you have read it. Your progress is saved in this browser.</p>
+<div class="bar" aria-hidden="true"><i id="bar"></i></div>
+<ol class="steps" id="steps"></ol>
+<div class="panel" style="margin-top:22px">
+<h3>Focus timer</h3>
+<p class="lead" style="margin:4px 0 14px">One block, one task. Phone in another room before you press start.</p>
+<div class="timer"><output id="clock" aria-live="off">50:00</output><button id="go">Start block</button><button id="rs" style="background:transparent;color:var(--ink)">Reset</button></div>
+<div class="bar" aria-hidden="true" style="margin:16px 0 0"><i id="tbar"></i></div>
+</div>
+</div></section>
+
+<section id="methods"><div class="wrap">
+<h2>More focus methods</h2>
+<p class="lead">Eleven methods, each tagged by what it fixes: Start, Stay, Retain, Plan or Body. Open one, try it for a week, keep what works. Studies are named where one exists.</p>
+<div class="mlist" id="mlist"></div>
+<h3 style="margin:36px 0 8px">Focus ladder: grow your block length</h3>
+<p class="lead">No one has shown a quick way to raise raw attention span. What you can build is the habit of staying with one task for longer. Start below your limit and add time each week. Do 2 blocks a day with a 5-minute break between them, phone in another room, and move up only after finishing every block of the week before.</p>
+<div class="ladder" id="ladder"></div>
+</div></section>
+
+<section id="fgame"><div class="wrap">
+<h2>Focus game: tap the code, ignore the noise</h2>
+<p class="lead">Tiles flash for less than a second. Tap only the dark CODE tiles. Yellow tiles (Reels, Chat, Ads) are distractions: tapping one costs you a point. The tiles get faster as the round goes on.</p>
+<div class="game"><div><div class="tgt" id="ftime">30</div><div class="stat"><span>Hits: <b id="fh">0</b></span><span>Wrong taps: <b id="fw">0</b></span><span>Missed: <b id="fm">0</b></span></div><button class="chip" id="fgo">Start 30 s round</button><p class="lead" id="fmsg" style="margin:14px 0 0">Tap CODE. Ignore the yellow tiles.</p></div><div class="fgrid" id="fgrid"></div></div>
+<p class="lead" style="margin:18px 0 0;font-size:15px">Use it as a 30-second warm-up before a study block. Reviews of brain-training games find little transfer to real-world skills (Simons et al., 2016), so it shows your attention right now; it does not train it for good.</p>
+</div></section>
+
+<section id="week"><div class="wrap">
+<h2>A sample week</h2>
+<p class="lead">Two deep blocks on weekdays, one longer block on the weekend. Change the times to fit your classes.</p>
+<div class="scroll"><table>
+<tr><th>When</th><th>Block</th><th>Output you can check</th></tr>
+<tr><td>Mon to Fri, morning</td><td>50-min study block (new topic)</td><td>Notes plus 3 to 5 solved problems</td></tr>
+<tr><td>Mon to Fri, evening</td><td>50-min build block (project)</td><td>At least one Git commit</td></tr>
+<tr><td>Saturday</td><td>2 to 3 hours: contest or mock test</td><td>Score and list of mistakes</td></tr>
+<tr><td>Sunday</td><td>20-min review</td><td>Hours, commits, problems; plan next week</td></tr>
+</table></div>
+</div></section>
+
+<footer hidden><div class="wrap">
+
+</div></footer>
+
+<script>
+var Y=[
+{t:"Year 1: Foundations",s:"Semesters 1 and 2",l:["C programming (variables, loops, functions, arrays, pointers)","Python basics","Logic and discrete maths","Computer fundamentals, Linux terminal, Git and GitHub","Typing speed and clear technical English"],b:["50 small C programs you wrote yourself","A command-line calculator or quiz game","A GitHub profile with 3 repositories"],g:"Goal: write and explain code without copying."},
+{t:"Year 2: Core computer science",s:"Semesters 3 and 4",l:["Data structures and algorithms (arrays, linked lists, stacks, trees, graphs, sorting, searching)","DBMS and SQL","Operating systems and computer networks","HTML, CSS, JavaScript, then one backend stack","Object-oriented programming (Java or C++)"],b:["A full-stack app with login and a database","150+ DSA problems across topics","One open-source pull request"],g:"Goal: solve problems on a timer and ship a working app."},
+{t:"Year 3: Specialise and convert",s:"Semesters 5 and 6",l:["Pick one track: web, data/ML, cloud, cybersecurity, embedded/IoT","Software engineering, system design basics","Interview preparation and resume","If going for MCA: entrance syllabus (maths, logic, computer awareness)"],b:["A capstone project solving a real problem","1 internship or 2 freelance projects","A portfolio site with case studies"],g:"Goal: have proof of work for a job or an MCA admission."}];
+var trail=document.getElementById("trail"),fill=document.getElementById("fill");
+function li(a){return"<ul>"+a.map(function(x){return"<li>"+x+"</li>"}).join("")+"</ul>"}
+
+Y.forEach(function(y){var d=document.createElement("div");d.className="stn";d.innerHTML="<span class='dot'></span><h3>"+y.t+"</h3><div class='sem'>"+y.s+"</div><div class='cols'><div><h4>Learn</h4>"+li(y.l)+"</div><div><h4>Build</h4>"+li(y.b)+"</div></div><p class='goal'>"+y.g+"</p>";trail.appendChild(d)});
+function sc(){var r=trail.getBoundingClientRect(),h=window.innerHeight,p=Math.max(0,Math.min(1,(h*.55-r.top)/r.height));fill.style.height=(p*100)+"%";[].forEach.call(trail.querySelectorAll(".stn"),function(s){s.classList.toggle("on",s.getBoundingClientRect().top<h*.55)})}
+window.addEventListener("scroll",sc,{passive:true});window.addEventListener("resize",sc);sc();
+
+var O=[
+["Hacktoberfest","Open source","Every October","Month-long open-source event run by DigitalOcean. Make pull requests to real projects and learn Git in public."],
+["Google Summer of Code","Earn","Applications usually in spring","Paid, remote work with an open-source organisation. Contributors must be 18+; beginners are accepted. Start contributing months before applying."],
+["Outreachy","Earn","Two rounds per year","Paid remote internships in open source for people underrepresented in tech. Check eligibility on the official site."],
+["MLH hackathons and Fellowship","Compete","Year-round","Student hackathons online and in person. Good for teammates, deadlines and shipped demos."],
+["Smart India Hackathon","Compete","Announced yearly","Government of India national hackathon on real problem statements from ministries and industry. Your college registers teams."],
+["Codeforces, CodeChef, LeetCode contests","Compete","Weekly","Timed contests that train problem solving. Ratings are public proof of skill."],
+["Kaggle competitions","Compete","Ongoing","Data science problems with public datasets and notebooks to learn from."],
+["Internshala and AICTE internship portal","Earn","Ongoing","Internship listings in India, many remote. Apply with a GitHub link, not only a resume."],
+["Freelancing (Upwork, Fiverr, local clients)","Earn","After Year 1 skills","Small websites, scripts and data tasks. Expect low pay at first; the reviews matter more."],
+["NPTEL and CS50 certificates","Learn","Self-paced","Verifiable certificates from known institutions to add to a resume."],
+["Cloud certifications (AWS, Azure, Google Cloud)","Learn","Self-paced","Entry-level exams exist for each. Exam fees apply; check current price and student offers."],
+["MCA via NIMCET and CUET-PG","Higher study","Yearly, check dates","Common routes to MCA after BCA, including NIT MCA seats through NIMCET. Check each year's syllabus and eligibility."]];
+var C=["All","Learn","Compete","Earn","Open source","Higher study"],ch=document.getElementById("chips"),og=document.getElementById("opps"),cur="All";
+function draw(){og.innerHTML="";O.forEach(function(o){if(cur!=="All"&&o[1]!==cur)return;var d=document.createElement("div");d.className="card";d.innerHTML="<b>"+o[0]+"</b><p>"+o[3]+"</p><small>"+o[1]+" | "+o[2]+"</small>";og.appendChild(d)});[].forEach.call(ch.children,function(b){b.setAttribute("aria-pressed",b.textContent===cur)})}
+C.forEach(function(c){var b=document.createElement("button");b.className="chip";b.textContent=c;b.onclick=function(){cur=c;draw()};ch.appendChild(b)});draw();
+
+var S=[
+["Write one outcome for this semester","Make it countable: \"solve 100 problems in C\" or \"ship one web app\". A vague goal gives you no way to say you are off track."],
+["Keep only two learning tracks","One main track (for example C, then DSA) and one build project. More than two means switching, and switching is where time disappears."],
+["Fix two daily blocks of 50 minutes","Same time and same place every day, written in your timetable. In a hostel, use the library or an empty classroom if your room is noisy. Blocks that depend on mood do not happen."],
+["Put the phone in another room","A 2017 study (Ward et al.) found that a phone on the desk, even switched off, reduced available attention. Later replications have been mixed, but moving the phone costs nothing."],
+["Block distracting apps and sites","Use your phone's focus mode or Digital Wellbeing, and a site blocker on your laptop (for example StayFocusd or Cold Turkey). Block social media and video sites during blocks. Do not rely on willpower."],
+["Start with a 5-minute rule","Open the editor and write one line of code or one problem before anything else. Starting is the hard part; the block usually continues."],
+["Test yourself, then review weekly","Close your notes and write the code from memory. Dunlosky et al. (2013) rated practice testing and spaced practice as the highest-utility study methods. On Sunday, spend 20 minutes on hours, commits and problems solved."]];
+var st=document.getElementById("steps"),bar=document.getElementById("bar"),sv={};
+try{sv=JSON.parse(localStorage.getItem("focus-steps")||"{}")}catch(e){sv={}}
+function upd(){var n=0;[].forEach.call(st.children,function(li,i){var c=li.querySelector("input").checked;li.className=c?"done":"";if(c)n++});bar.style.width=(n/S.length*100)+"%";try{localStorage.setItem("focus-steps",JSON.stringify(sv))}catch(e){}}
+S.forEach(function(s,i){var li=document.createElement("li");li.innerHTML="<label><input type='checkbox'"+(sv[i]?" checked":"")+"><span>"+s[0]+"</span></label><p>"+s[1]+"</p>";li.querySelector("input").onchange=function(e){sv[i]=e.target.checked;upd()};st.appendChild(li)});upd();
+
+var T=50*60,run=null,clock=document.getElementById("clock"),go=document.getElementById("go");
+function fmt(){var m=Math.floor(T/60),s=T%60;clock.textContent=(m<10?"0":"")+m+":"+(s<10?"0":"")+s;document.getElementById("tbar").style.width=((3000-T)/3000*100)+"%"}
+go.onclick=function(){if(run){clearInterval(run);run=null;go.textContent="Resume";return}go.textContent="Pause";run=setInterval(function(){T--;fmt();if(T<=0){clearInterval(run);run=null;go.textContent="Start block";T=50*60;clock.textContent="Done. Rest 10 min."}},1000)};
+document.getElementById("rs").onclick=function(){clearInterval(run);run=null;T=50*60;fmt();go.textContent="Start block"};
+var term=document.getElementById("term"),L=[["c","// semester1.c"],["k","#include <stdio.h>"],["","int main(void) {"],["","  printf(\"Hello, BCA\\n\");"],["","  return 0;"],["","}"],["c","$ gcc semester1.c -o s1 && ./s1"],["ok","Hello, BCA"],["ok","Build succeeded. Next: semester2.c"]];
+function put(i,t){var d=document.createElement("div");if(L[i][0])d.className=L[i][0];d.textContent=t;term.appendChild(d);return d}
+if(window.matchMedia("(prefers-reduced-motion:reduce)").matches){L.forEach(function(l,i){put(i,l[1])})}else{var ti=0,tj=0,td=null,cur=document.createElement("i");(function tick(){if(ti>=L.length)return;var t=L[ti][1];if(!td){td=put(ti,"");td.appendChild(cur)}if(tj<t.length){td.insertBefore(document.createTextNode(t[tj++]),cur);setTimeout(tick,L[ti][0]==="ok"?6:26)}else{ti++;tj=0;td=null;setTimeout(tick,ti===7?500:150)}})()}
+
+var GV=[128,64,32,16,8,4,2,1],gb=document.getElementById("bits"),gt=0,gon=[0,0,0,0,0,0,0,0],gsolved=0,gstreak=0,gel=[];
+GV.forEach(function(v,i){var b=document.createElement("button");b.className="bit";b.setAttribute("aria-pressed","false");b.setAttribute("aria-label","Bit worth "+v);b.innerHTML="<b>0</b><span>"+v+"</span>";b.onclick=function(){if(gb.classList.contains("ok")||glock)return;gon[i]=gon[i]?0:1;b.setAttribute("aria-pressed",gon[i]?"true":"false");b.firstChild.textContent=gon[i];gchk()};gb.appendChild(b);gel.push(b)});
+function gnew(){gt=1+Math.floor(Math.random()*255);gon=[0,0,0,0,0,0,0,0];gb.classList.remove("ok");gel.forEach(function(b){b.setAttribute("aria-pressed","false");b.firstChild.textContent="0"});document.getElementById("tgt").textContent=gt;gchk()}
+function gchk(){var s=0,p=[],m=document.getElementById("msg");gon.forEach(function(x,i){if(x){s+=GV[i];p.push(GV[i])}});document.getElementById("sum").textContent="Sum: "+(p.length?p.join(" + ")+" = ":"")+s;if(s===gt){gb.classList.add("ok");gel.forEach(function(b,i){b.style.animationDelay=i*45+"ms"});gsolved++;gstreak++;if(gspeed)gsp++;document.getElementById("sc").textContent=gsolved;document.getElementById("stk").textContent=gstreak;m.textContent="Correct. In binary, "+gt+" is "+gon.join("")+". A new number is coming.";setTimeout(gnew,gspeed?450:2000)}else if(s>gt){m.textContent="Too high by "+(s-gt)+". Switch a cell off."}else{m.textContent=(gt-s)+" more to reach "+gt+". Try the largest cell that still fits."}}
+document.getElementById("skip").onclick=function(){gstreak=0;document.getElementById("stk").textContent=0;gnew()};gnew();
+
+var nl=[].slice.call(document.querySelectorAll("nav a"));
+function spy(){var y=window.innerHeight*.35,c2=null;nl.forEach(function(a){var s=document.querySelector(a.getAttribute("href"));if(s&&s.getBoundingClientRect().top<y)c2=a});nl.forEach(function(a){a.classList.toggle("on",a===c2)})}
+window.addEventListener("scroll",spy,{passive:true});spy();
+if(!window.matchMedia("(prefers-reduced-motion:reduce)").matches&&"IntersectionObserver"in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.15});document.querySelectorAll("#resources .card,.scroll tr").forEach(function(el,i){el.classList.add("rv");el.style.transitionDelay=(i%4)*70+"ms";io.observe(el)})}
+
+var gspeed=false,glock=false,gsp=0,gbest=0,gti=null;
+var pB=document.getElementById("pBuild"),pQ=document.getElementById("pQuiz"),gtabs=document.getElementById("gtabs"),gmsg=document.getElementById("msg"),spgo=document.getElementById("spgo"),sptime=document.getElementById("sptime"),skp=document.getElementById("skip");
+function sh(a){for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)),t=a[i];a[i]=a[j];a[j]=t}return a}
+function ri(a,b){return a+Math.floor(Math.random()*(b-a+1))}
+function dis(n,lo,hi){var s={},k=0,d,ds=[-16,-8,-4,-2,-1,1,2,4,8,16];s[n]=1;while(Object.keys(s).length<4&&k++<60){d=n+ds[ri(0,9)];if(d>=lo&&d<=hi)s[d]=1}return sh(Object.keys(s))}
+function b4(x){return("0000"+x.toString(2)).slice(-4)}
+function gRead(){var n=ri(1,255),b=("00000000"+n.toString(2)).slice(-8),on=[];b.split("").forEach(function(c,i){if(c==="1")on.push(GV[i])});return{t:"Read the bits. Which number is this?",cls:"rb",h:b.split("").map(function(c){return"<span"+(c==="1"?" class='one'":"")+">"+c+"</span>"}).join(""),o:dis(n,0,255),a:String(n),e:on.join(" + ")+" = "+n+"."}}
+function gOp(){var o=["&","|","^","<<",">>"][ri(0,4)],a,b,r,e;
+if(o==="<<"){a=ri(1,15);b=ri(1,3);r=a<<b;e=a+" shifted left by "+b+" multiplies by "+(1<<b)+": "+r+"."}
+else if(o===">>"){a=ri(8,63);b=ri(1,3);r=a>>b;e=a+" shifted right by "+b+" divides by "+(1<<b)+" and drops the remainder: "+r+"."}
+else{a=ri(1,15);b=ri(1,15);r=o==="&"?a&b:o==="|"?a|b:a^b;e=b4(a)+" "+o+" "+b4(b)+" = "+b4(r)+" = "+r+(o==="&"?". AND gives 1 only where both bits are 1.":o==="|"?". OR gives 1 where either bit is 1.":". XOR gives 1 where the bits differ.")}
+return{t:"What does this C code print?",cls:"code",h:"int a = "+a+", b = "+b+";\nprintf(\"%d\", a "+o+" b);",o:dis(r,0,255),a:String(r),e:e}}
+var CS=[["int x = 5;\nprintf(\"%d\", x << 2);","20",["10","20","7","25"],"Shifting left by 2 multiplies by 4: 5 x 4 = 20."],["char c = 'A';\nprintf(\"%d\", c);","65",["65","97","1","A"],"A char is stored as a number. 'A' is 65 in ASCII, and %d prints that number."],["printf(\"%d\", 7 / 2);","3",["3","3.5","4","2"],"Both numbers are int, so C does integer division and drops the .5."],["int x = 6;\nprintf(\"%d\", x & 1);","0",["0","1","6","7"],"The last bit tells odd or even. 6 is 110 in binary, last bit 0, so it is even."],["unsigned char n = 255;\nn = n + 1;\nprintf(\"%d\", n);","0",["256","0","255","1"],"8 bits hold 0 to 255. Adding 1 wraps around to 0 (overflow)."],["printf(\"%zu\", sizeof(char));","1",["1","8","2","4"],"sizeof counts bytes. A char is 1 byte, which is 8 bits."],["int a = 9;\nprintf(\"%d\", a ^ a);","0",["9","18","0","1"],"XOR gives 1 only where bits differ. A number never differs from itself, so the result is 0."]];
+function gC(){var c=CS[ri(0,CS.length-1)];return{t:"What does this C code print?",cls:"code",h:c[0],o:sh(c[2].slice()),a:c[1],e:c[3]}}
+var qm="read",qlock=false,qok=0,qn=0,GEN={read:gRead,ops:gOp,c:gC},qq=null;
+function qnew(){qq=GEN[qm]();qlock=false;var qb=document.getElementById("qb"),qo=document.getElementById("qopts");document.getElementById("qtitle").textContent=qq.t;qb.className="qb "+qq.cls;if(qq.cls==="rb")qb.innerHTML=qq.h;else qb.textContent=qq.h;qo.innerHTML="";document.getElementById("qfb").textContent="";document.getElementById("qnext").hidden=true;qq.o.forEach(function(o){var b=document.createElement("button");b.textContent=o;b.onclick=function(){if(qlock)return;qlock=true;qn++;var good=o===qq.a;if(good)qok++;[].forEach.call(qo.children,function(x){if(x.textContent===qq.a)x.className="good"});if(!good)b.className="bad";document.getElementById("qfb").textContent=(good?"Correct. ":"Not quite. ")+qq.e;document.getElementById("qc").textContent=qok;document.getElementById("qt").textContent=qn;var nx=document.getElementById("qnext");nx.hidden=false;nx.focus()};qo.appendChild(b)})}
+document.getElementById("qnext").onclick=qnew;
+var GM=[["build","Build the number"],["speed","Speed round"],["read","Read the bits"],["ops","Bit operators"],["c","C output"]];
+GM.forEach(function(m){var b=document.createElement("button");b.className="chip";b.textContent=m[1];b.dataset.m=m[0];b.onclick=function(){gmode(m[0])};gtabs.appendChild(b)});
+function gmode(m){[].forEach.call(gtabs.children,function(b){b.setAttribute("aria-pressed",b.dataset.m===m)});var bq=m==="build"||m==="speed";pB.hidden=!bq;pQ.hidden=bq;clearInterval(gti);if(bq){gspeed=m==="speed";spgo.hidden=!gspeed;spgo.textContent="Start 45 s round";skp.hidden=gspeed;sptime.textContent="";glock=gspeed;gstreak=0;document.getElementById("stk").textContent=0;gnew();if(gspeed)gmsg.textContent="Press Start. Build as many numbers as you can in 45 seconds."}else{qm=m;qok=0;qn=0;document.getElementById("qc").textContent=0;document.getElementById("qt").textContent=0;qnew()}}
+spgo.onclick=function(){gsp=0;glock=false;var t=45;sptime.textContent=t+" s";spgo.hidden=true;gnew();clearInterval(gti);gti=setInterval(function(){t--;sptime.textContent=t+" s";if(t<=0){clearInterval(gti);glock=true;gbest=Math.max(gbest,gsp);gmsg.textContent="Time. You built "+gsp+" numbers. Best this visit: "+gbest+".";spgo.textContent="Play again";spgo.hidden=false}},1000)};
+gmode("build");
+document.querySelector("header.hero").appendChild(document.getElementById("game"));
+(function(){var rm=matchMedia("(prefers-reduced-motion:reduce)").matches,hd=document.querySelector("header.hero");if(!rm){for(var k=0;k<16;k++){var f=document.createElement("span");f.className="fb";f.setAttribute("aria-hidden","true");f.textContent=Math.random()<.5?"0":"1";f.style.left=ri(2,97)+"%";f.style.animationDuration=ri(9,18)+"s";f.style.animationDelay="-"+ri(0,14)+"s";hd.appendChild(f)}}})();
+
+var M=[["Start","If-then plan","Write it as: if it is 7 pm, then I open the editor at my fixed desk and solve one problem. Decide the trigger and the action in advance, so there is nothing to decide when the time comes.","A meta-analysis (Gollwitzer and Sheeran, 2006) found a medium-to-large effect of if-then plans on reaching goals (d about 0.65)."],["Start","Fixed place and time","Use the same desk at the same hour. In a hostel, the library or an empty classroom works if your room is crowded or noisy.","Repeated actions in a stable setting become automatic. In one study the median was 66 days, with a range of 18 to 254 days (Lally et al., 2010)."],["Stay","Pomodoro 25/5","Work 25 minutes on one task, then rest 5. After four rounds, rest 15 to 30 minutes. Good when starting feels hard.","Created by Francesco Cirillo. Short blocks lower the barrier to start. There is little hard evidence that 25 is the best length, so adjust it."],["Stay","50/10 blocks","Work 50 minutes, rest 10. Better for coding and problem solving, where it takes time to get into the task.","This is the length of the timer on this page. Reach it step by step with the focus ladder below."],["Stay","Parking-lot notebook","Keep a paper notebook beside you. When an urge appears (check a message, search something), write it in 5 words and go back to work. Read the list after the block.","The thought is saved, so you do not need to act on it now."],["Stay","One tab, one task","Close every tab and app except the editor and one reference page. Keep notifications off for the whole block.","Switching tasks has a measurable time cost (Rubinstein, Meyer and Evans, 2001). Gloria Mark's work is often quoted as about 23 minutes to fully return after an interruption."],["Retain","Feynman technique","Explain the topic in simple words as if teaching a friend, with no notes. Wherever you get stuck is what you study again.","It is a form of retrieval practice, which Dunlosky et al. (2013) rated as high utility."],["Retain","Spaced repetition","Review a topic after 1 day, 3 days, 7 days and 14 days instead of all at once. Use paper cards or a free app such as Anki.","Spaced practice was also rated high utility by Dunlosky et al. (2013)."],["Plan","Eisenhower sort","Each Sunday sort tasks into four groups: important and urgent, important not urgent, urgent not important, neither. Put your daily blocks on the important ones first and drop the last group.","A prioritising rule. It does not add attention, but it stops small urgent things from taking your blocks."],["Body","Sleep 7 hours or more","Keep a fixed sleep and wake time. Studying late at night usually costs more attention the next day than it gains.","The American Academy of Sleep Medicine and Sleep Research Society recommend 7 or more hours for adults (Watson et al., 2015)."],["Body","Move between blocks","Stand, stretch, drink water or walk for 5 to 10 minutes. Do not spend the break on the phone or short videos.","A reasonable habit, not a proven attention booster. Evidence for a direct effect on attention is mixed."]];
+var ml=document.getElementById("mlist");M.forEach(function(m){var d=document.createElement("details");d.className="mth";d.innerHTML="<summary>"+m[1]+"<small>"+m[0]+"</small></summary><div class='mb'><p>"+m[2]+"</p><p class='ev'>"+m[3]+"</p></div>";ml.appendChild(d)});
+var LD=[[15,"Week 1"],[25,"Week 2"],[35,"Week 3"],[50,"Week 4"]],ld=document.getElementById("ladder");LD.forEach(function(l,i){var d=document.createElement("div");d.className="lad";d.style.setProperty("--m",l[0]);d.innerHTML="<i style='transition-delay:"+i*140+"ms'></i><b>"+l[1]+"</b>"+l[0]+" min x 2";ld.appendChild(d)});
+var tg=[].slice.call(document.querySelectorAll("h2,.ladder"));
+if(matchMedia("(prefers-reduced-motion:reduce)").matches||!("IntersectionObserver"in window)){tg.forEach(function(e){e.classList.add("in")})}else{var io2=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io2.unobserve(e.target)}})},{threshold:.4});tg.forEach(function(e){io2.observe(e)})}
+
+var FN=["Reels","Chat","Ads","Game","Like"],fgrid=document.getElementById("fgrid"),ft=[],fr={best:0},fgo=document.getElementById("fgo");
+function fq(i){return document.getElementById(i)}
+for(var fi=0;fi<9;fi++)(function(i){var b=document.createElement("button");b.className="ft";b.setAttribute("aria-label","Empty tile");b.onclick=function(){ftap(i)};fgrid.appendChild(b);ft.push(b)})(fi);
+function fset(){fq("fh").textContent=fr.h;fq("fw").textContent=fr.w;fq("fm").textContent=fr.m}
+function fclr(){if(fr.cell>=0){ft[fr.cell].className="ft";ft[fr.cell].textContent="";ft[fr.cell].setAttribute("aria-label","Empty tile")}fr.type=""}
+function fnext(){if(!fr.on)return;var c;do{c=ri(0,8)}while(c===fr.cell);fr.cell=c;fr.type=Math.random()<.65?"code":"noise";fr.span=Math.max(600,900-(30-fr.t)*10);var b=ft[c],tx=fr.type==="code"?"CODE":FN[ri(0,4)];b.textContent=tx;b.setAttribute("aria-label",tx);b.className="ft on "+fr.type;fr.born=performance.now();fr.hide=setTimeout(function(){if(fr.type==="code"){fr.m++;fset()}fclr();fr.spawn=setTimeout(fnext,220)},fr.span)}
+function ftap(i){if(!fr.on||i!==fr.cell||!fr.type)return;clearTimeout(fr.hide);var good=fr.type==="code";if(good){fr.h++;fr.rt.push(performance.now()-fr.born)}else fr.w++;ft[i].className="ft "+(good?"hit":"wrong");fr.type="";fset();fr.spawn=setTimeout(function(){fclr();fnext()},260)}
+function fend(){fr.on=false;clearInterval(fr.tm);clearTimeout(fr.hide);clearTimeout(fr.spawn);fclr();var tot=fr.h+fr.w+fr.m,acc=tot?Math.round(fr.h/tot*100):0,avg=fr.rt.length?Math.round(fr.rt.reduce(function(a,b){return a+b},0)/fr.rt.length):0,sc2=Math.max(0,fr.h-fr.w);fr.best=Math.max(fr.best,sc2);fq("fmsg").textContent="Score "+sc2+" (hits minus wrong taps). Hits were "+acc+"% of all tiles, wrong taps and misses. Average reaction "+avg+" ms. Best score: "+fr.best+".";fgo.textContent="Play again";fgo.hidden=false}
+fgo.onclick=function(){fr={on:true,t:30,h:0,w:0,m:0,rt:[],cell:-1,type:"",born:0,hide:null,spawn:null,tm:null,best:fr.best||0,span:900};fset();fq("ftime").textContent=30;fgo.hidden=true;fq("fmsg").textContent="Go.";fr.tm=setInterval(function(){fr.t--;fq("ftime").textContent=fr.t;if(fr.t<=0)fend()},1000);fnext()};
+</script>
+</body>
+</html>
